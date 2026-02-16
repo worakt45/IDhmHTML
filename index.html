@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>สถาปัตยกรรมแห่งความหลุดพ้น | Digital Platform for Liberation</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;600&family=Sarabun:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        :root {
+            --primary: #2D5A54;
+            --accent: #B8860B;
+            --bg-soft: #F9F7F2;
+        }
+        body {
+            font-family: 'Sarabun', sans-serif;
+            background-color: var(--bg-soft);
+            color: #333;
+            scroll-behavior: smooth;
+        }
+        h1, h2, h3, h4 {
+            font-family: 'Prompt', sans-serif;
+        }
+        .nav-link:hover {
+            color: var(--accent);
+        }
+        .hero-gradient {
+            background: linear-gradient(rgba(45, 90, 84, 0.8), rgba(45, 90, 84, 0.9)), 
+                        url('https://images.unsplash.com/photo-1528319725582-ddc096101511?auto=format&fit=crop&q=80&w=2000');
+            background-size: cover;
+            background-position: center;
+        }
+        .visuddhi-step:hover .step-number {
+            background-color: var(--accent);
+            color: white;
+        }
+        .card-shadow {
+            box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-white/80 backdrop-blur-md border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                <div class="flex items-center gap-2">
+                    <div class="w-10 h-10 bg-[#2D5A54] rounded-full flex items-center justify-center text-white">
+                        <i class="fa-solid fa-dharmachakra animate-spin-slow"></i>
+                    </div>
+                    <span class="text-xl font-semibold text-[#2D5A54] tracking-tight">Liberation Architecture</span>
+                </div>
+                <div class="hidden md:flex space-x-8 text-sm font-medium">
+                    <a href="#concept" class="nav-link transition">แนวคิด</a>
+                    <a href="#visuddhi" class="nav-link transition">วิสุทธิ 7</a>
+                    <a href="#charitas" class="nav-link transition">ค้นหาจริต</a>
+                    <a href="#community" class="nav-link transition">สังฆะดิจิทัล</a>
+                </div>
+                <button class="bg-[#2D5A54] text-white px-6 py-2 rounded-full text-sm font-medium hover:bg-[#1f423d] transition">
+                    เริ่มต้นใช้งาน
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-gradient min-h-screen flex items-center pt-20 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 text-center">
+            <h1 class="text-4xl md:text-6xl font-bold leading-tight mb-6">
+                สถาปัตยกรรมแห่งความหลุดพ้น
+            </h1>
+            <p class="text-xl md:text-2xl text-gray-200 max-w-3xl mx-auto mb-10 font-light">
+                ระบบนิเวศแห่งการตื่นรู้ที่เชื่อมโยงหลักพุทธศาสตร์ดั้งเดิม เข้ากับเทคโนโลยีการวิเคราะห์ข้อมูลสมัยใหม่ เพื่อการดับทุกข์ที่ตรงจุด
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#visuddhi" class="bg-[#B8860B] text-white px-8 py-4 rounded-full text-lg font-medium hover:scale-105 transition">
+                    เรียนรู้วิถีวิสุทธิ 7
+                </a>
+                <a href="#charitas" class="bg-white/10 backdrop-blur-md border border-white/20 px-8 py-4 rounded-full text-lg font-medium hover:bg-white/20 transition">
+                    ประเมินจริตส่วนบุคคล
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Philosophy -->
+    <section id="concept" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 gap-16 items-center">
+                <div>
+                    <span class="text-[#B8860B] font-semibold tracking-widest uppercase text-sm">Philosophical Foundation</span>
+                    <h2 class="text-3xl md:text-4xl font-bold text-[#2D5A54] mt-4 mb-6">ความทุกข์ที่สลับซับซ้อน <br>ต้องการแนวทางที่แม่นยำ</h2>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        ในยุคดิจิทัลที่เร่งรีบ ความทุกข์แฝงตัวอยู่ในทุกมิติของชีวิต แพลตฟอร์มของเราไม่ได้เพียงแค่นำเสนอข้อมูล แต่เราสร้างโครงสร้างพื้นฐานดิจิทัลที่สนับสนุนการก้าวข้ามความบริสุทธิ์ของจิตในแต่ละขั้นอย่างต่อเนื่อง
+                    </p>
+                    <div class="grid grid-cols-2 gap-6">
+                        <div class="border-l-4 border-[#B8860B] pl-4">
+                            <h4 class="font-bold text-lg text-[#2D5A54]">Data-Driven</h4>
+                            <p class="text-sm text-gray-500">วิเคราะห์สภาวธรรมเชิงตรรกะ</p>
+                        </div>
+                        <div class="border-l-4 border-[#B8860B] pl-4">
+                            <h4 class="font-bold text-lg text-[#2D5A54]">Personalized</h4>
+                            <p class="text-sm text-gray-500">ปรับแนวทางตามจริตส่วนบุคคล</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative">
+                    <img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&q=80&w=1000" class="rounded-3xl card-shadow" alt="Mindfulness Practice">
+                    <div class="absolute -bottom-6 -left-6 bg-[#2D5A54] p-8 rounded-2xl text-white hidden md:block">
+                        <p class="text-2xl font-bold">7 Stages</p>
+                        <p class="text-sm opacity-80">Of Mental Purification</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Visuddhi 7 Steps -->
+    <section id="visuddhi" class="py-24 bg-[#F9F7F2]">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center mb-16">
+            <h2 class="text-4xl font-bold text-[#2D5A54]">เส้นทางวิสุทธิ 7: Digital Roadmap</h2>
+            <p class="mt-4 text-gray-600">วิถีแห่งความบริสุทธิ์ 7 ขั้นตอนที่แปลงสู่ฟีเจอร์การใช้งานในชีวิตจริง</p>
+        </div>
+
+        <div class="max-w-5xl mx-auto px-4">
+            <div class="space-y-8">
+                <!-- Step 1 -->
+                <div class="visuddhi-step flex flex-col md:flex-row gap-6 bg-white p-8 rounded-2xl card-shadow transition hover:translate-x-2">
+                    <div class="step-number w-16 h-16 rounded-full border-2 border-[#2D5A54] flex items-center justify-center text-2xl font-bold text-[#2D5A54] shrink-0 transition">1</div>
+                    <div>
+                        <h3 class="text-xl font-bold text-[#2D5A54]">สีลวิสุทธิ (Ethical Foundation)</h3>
+                        <p class="text-gray-600 mt-2">ระบบติดตามพฤติกรรม (Ethical Tracker) เพื่อความสำรวมระวังกายวาจา และการพิจารณาปัจจัย 4 ในชีวิตประจำวันอย่างมีสติ</p>
+                    </div>
+                </div>
+                <!-- Step 2 -->
+                <div class="visuddhi-step flex flex-col md:flex-row gap-6 bg-white p-8 rounded-2xl card-shadow transition hover:translate-x-2">
+                    <div class="step-number w-16 h-16 rounded-full border-2 border-[#2D5A54] flex items-center justify-center text-2xl font-bold text-[#2D5A54] shrink-0 transition">2</div>
+                    <div>
+                        <h3 class="text-xl font-bold text-[#2D5A54]">จิตตวิสุทธิ (Concentration)</h3>
+                        <p class="text-gray-600 mt-2">ระบบสมาธิบำบัด (Meditation Timer) พร้อมเครื่องมือขจัดนิวรณ์และสิ่งเร้าที่รบกวนความตั้งมั่นของจิต</p>
+                    </div>
+                </div>
+                <!-- Step 3-7 Combined for Brevity in Webpage -->
+                <div class="visuddhi-step flex flex-col md:flex-row gap-6 bg-white p-8 rounded-2xl card-shadow transition hover:translate-x-2">
+                    <div class="step-number w-16 h-16 rounded-full border-2 border-[#2D5A54] flex items-center justify-center text-2xl font-bold text-[#2D5A54] shrink-0 transition">3+</div>
+                    <div>
+                        <h3 class="text-xl font-bold text-[#2D5A54]">ปัญญาวิสุทธิ (Insight Journey)</h3>
+                        <p class="text-gray-600 mt-2">จากทิฏฐิวิสุทธิสู่ญาณทัสสนวิสุทธิ ผ่านโมดูลการเรียนรู้อนัตตา แผนผังปฏิจจสมุปบาท และระบบ AI สะท้อนสภาวธรรม</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Charitas Tool (Interactive Simulation) -->
+    <section id="charitas" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-[#2D5A54] rounded-[40px] overflow-hidden shadow-2xl flex flex-col md:flex-row">
+                <div class="p-12 md:w-1/2 text-white">
+                    <h2 class="text-3xl font-bold mb-6">ค้นหากัมมัฏฐานที่ใช่ตาม "จริต"</h2>
+                    <p class="text-gray-300 mb-8 leading-relaxed">
+                        แต่ละคนมีพื้นเพนิสัยที่ต่างกัน อัลกอริทึมของเราจะช่วยคัดกรองวิธีปฏิบัติที่เหมาะสมที่สุดสำหรับคุณ เพื่อให้การฝึกฝนเกิดผลลัพธ์สูงสุด
+                    </p>
+                    <div class="space-y-4">
+                        <div class="flex items-center gap-4">
+                            <i class="fa-solid fa-check-circle text-[#B8860B]"></i>
+                            <span>วิเคราะห์พฤติกรรมและความโน้มเอียงของจิต</span>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <i class="fa-solid fa-check-circle text-[#B8860B]"></i>
+                            <span>แนะนำกรรมฐานแก้ทางจริตโดยเฉพาะ</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white p-12 md:w-1/2">
+                    <div id="quiz-container">
+                        <h3 class="text-xl font-bold text-[#2D5A54] mb-6">คุณมักจะรู้สึกอย่างไรบ่อยที่สุด?</h3>
+                        <div class="space-y-4">
+                            <button onclick="showResult('โทสจริต')" class="w-full text-left p-4 rounded-xl border border-gray-200 hover:border-[#B8860B] hover:bg-orange-50 transition group">
+                                <span class="font-medium group-hover:text-[#B8860B]">หงุดหงิดง่าย ชอบจับผิด มักโกรธ</span>
+                            </button>
+                            <button onclick="showResult('ราคจริต')" class="w-full text-left p-4 rounded-xl border border-gray-200 hover:border-[#B8860B] hover:bg-orange-50 transition group">
+                                <span class="font-medium group-hover:text-[#B8860B]">รักสวยรักงาม ติดในความสบาย ช่างเลือก</span>
+                            </button>
+                            <button onclick="showResult('โมหจริต')" class="w-full text-left p-4 rounded-xl border border-gray-200 hover:border-[#B8860B] hover:bg-orange-50 transition group">
+                                <span class="font-medium group-hover:text-[#B8860B]">ง่วงเหงาหาวนอน ฟุ้งซ่าน ตัดสินใจไม่เด็ดขาด</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div id="result-container" class="hidden text-center py-8">
+                        <div class="text-5xl mb-4 text-[#B8860B]"><i class="fa-solid fa-spa"></i></div>
+                        <h4 id="result-title" class="text-2xl font-bold text-[#2D5A54] mb-2"></h4>
+                        <p id="result-desc" class="text-gray-600 mb-6"></p>
+                        <button onclick="resetQuiz()" class="text-sm text-gray-400 underline uppercase tracking-widest">ทำแบบทดสอบใหม่</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Digital Sangha -->
+    <section id="community" class="py-24 bg-[#F9F7F2]">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-[#2D5A54]">สังฆะดิจิทัลเพื่อสังคม</h2>
+                <p class="mt-4 text-gray-600 italic">"เพราะความหลุดพ้นที่แท้จริง คือการช่วยให้ผู้อื่นพ้นทุกข์ด้วย"</p>
+            </div>
+
+            <div class="grid md:grid-cols-4 gap-8">
+                <!-- BrahmaVihara 4 Cards -->
+                <div class="bg-white p-8 rounded-2xl card-shadow text-center">
+                    <div class="w-12 h-12 bg-green-50 text-green-600 rounded-lg flex items-center justify-center mx-auto mb-6 text-xl">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+                    <h4 class="font-bold text-[#2D5A54] mb-2">เมตตา</h4>
+                    <p class="text-sm text-gray-500">ระบบส่งต่อพลังบวกและข้อความให้กำลังใจ</p>
+                </div>
+                <div class="bg-white p-8 rounded-2xl card-shadow text-center">
+                    <div class="w-12 h-12 bg-red-50 text-red-600 rounded-lg flex items-center justify-center mx-auto mb-6 text-xl">
+                        <i class="fa-solid fa-hand-holding-heart"></i>
+                    </div>
+                    <h4 class="font-bold text-[#2D5A54] mb-2">กรุณา</h4>
+                    <p class="text-sm text-gray-500">เครือข่ายอาสาสมัครบำบัดทุกข์และภัยพิบัติ</p>
+                </div>
+                <div class="bg-white p-8 rounded-2xl card-shadow text-center">
+                    <div class="w-12 h-12 bg-yellow-50 text-yellow-600 rounded-lg flex items-center justify-center mx-auto mb-6 text-xl">
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h4 class="font-bold text-[#2D5A54] mb-2">มุทิตา</h4>
+                    <p class="text-sm text-gray-500">พื้นที่แบ่งปันแรงบันดาลใจและความสำเร็จ</p>
+                </div>
+                <div class="bg-white p-8 rounded-2xl card-shadow text-center">
+                    <div class="w-12 h-12 bg-blue-50 text-blue-600 rounded-lg flex items-center justify-center mx-auto mb-6 text-xl">
+                        <i class="fa-solid fa-scale-balanced"></i>
+                    </div>
+                    <h4 class="font-bold text-[#2D5A54] mb-2">อุเบกขา</h4>
+                    <p class="text-sm text-gray-500">ระบบไกล่เกลี่ยความขัดแย้งบนฐานของปัญญา</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ethics Section -->
+    <section class="py-24 bg-white border-t border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-3xl mx-auto text-center">
+                <h2 class="text-2xl font-bold text-[#2D5A54] mb-8">จริยธรรมข้อมูล (PAPA Standard)</h2>
+                <p class="text-gray-500 mb-12">เรายึดถือความเป็นส่วนตัวของสภาวธรรมเป็นหัวใจสำคัญ ข้อมูลของคุณจะได้รับการปกป้องและรักษาไว้เป็นความลับสูงสุดตามหลักพุทธจริยธรรม</p>
+                <div class="flex justify-center gap-8 opacity-40">
+                    <i class="fa-solid fa-shield-halved text-4xl"></i>
+                    <i class="fa-solid fa-lock text-4xl"></i>
+                    <i class="fa-solid fa-user-secret text-4xl"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#2D5A54] text-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-3 gap-12">
+            <div>
+                <div class="flex items-center gap-2 mb-6">
+                    <i class="fa-solid fa-dharmachakra text-2xl"></i>
+                    <span class="text-xl font-bold">Liberation Architecture</span>
+                </div>
+                <p class="text-gray-400 text-sm leading-relaxed">
+                    ไม่ใช่เพียงแอปพลิเคชัน แต่คือยานพาหนะที่จะนำพาคุณข้ามมหาสมุทรแห่งความทุกข์ ด้วยปัญญาและเทคโนโลยี
+                </p>
+            </div>
+            <div>
+                <h4 class="font-bold mb-6">ลิงก์ที่เป็นประโยชน์</h4>
+                <ul class="text-gray-400 text-sm space-y-4">
+                    <li><a href="#" class="hover:text-white transition">หลักสูตรวิปัสสนา</a></li>
+                    <li><a href="#" class="hover:text-white transition">จริยธรรมดิจิทัล</a></li>
+                    <li><a href="#" class="hover:text-white transition">งานวิจัยพุทธจิตวิทยา</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-bold mb-6">ติดตามเรา</h4>
+                <div class="flex gap-4">
+                    <a href="#" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-[#B8860B] transition"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-[#B8860B] transition"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="#" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-[#B8860B] transition"><i class="fa-solid fa-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-16 pt-8 border-t border-white/10 text-center text-gray-500 text-xs">
+            © 2024 Liberation Architecture. ปัญญาตื่นรู้สู่มวลมนุษยชาติ.
+        </div>
+    </footer>
+
+    <script>
+        const results = {
+            'โทสจริต': {
+                title: 'คุณมี "โทสจริต"',
+                desc: 'แนะนำกัมมัฏฐาน: เมตตาภาวนา หรือ พรหมวิหาร 4 เพื่อปรับจิตใจให้อ่อนโยน ลดความโกรธ และเพิ่มความเห็นอกเห็นใจผู้อื่น'
+            },
+            'ราคจริต': {
+                title: 'คุณมี "ราคจริต"',
+                desc: 'แนะนำกัมมัฏฐาน: อสุภกถา หรือ กายคตาสติ (พิจารณาร่างกาย) เพื่อลดความยึดติดในความสวยงามและกามคุณ'
+            },
+            'โมหจริต': {
+                title: 'คุณมี "โมหจริต / วิตกจริต"',
+                desc: 'แนะนำกัมมัฏฐาน: อานาปานสติ (กำหนดลมหายใจ) เพื่อสร้างสมาธิที่ตั้งมั่น สยบความฟุ้งซ่านและอาการง่วงเหงาหาวนอน'
+            }
+        };
+
+        function showResult(type) {
+            document.getElementById('quiz-container').classList.add('hidden');
+            document.getElementById('result-container').classList.remove('hidden');
+            document.getElementById('result-title').innerText = results[type].title;
+            document.getElementById('result-desc').innerText = results[type].desc;
+        }
+
+        function resetQuiz() {
+            document.getElementById('quiz-container').classList.remove('hidden');
+            document.getElementById('result-container').classList.add('hidden');
+        }
+    </script>
+</body>
+</html>
